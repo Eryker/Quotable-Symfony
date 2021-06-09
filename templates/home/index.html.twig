@@ -5,10 +5,11 @@
 
 {% block body %}
 	
-    <div class="card text-center mt-5 col-6 mx-auto">
+
+   <div id="quote">
            <div class="card-body">
                <p class="card-text">{{data.content}}</p>
-               <h3 class="card-footer text-dark mx-2">{{ data.author }}</h3>
+               <h3 class="text-secondary mx-2">{{ data.author }}</h3>
            </div>
     </div>
 {% endblock %}
