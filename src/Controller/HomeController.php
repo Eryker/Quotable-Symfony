@@ -14,6 +14,7 @@ class HomeController extends AbstractController
      */
     public function index(CallApiService $callApiService): Response
     {
+        dd($callApiService->getQuoteData());
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
