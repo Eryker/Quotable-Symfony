@@ -5,7 +5,8 @@ namespace App\Service;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 
-class CallApiService {
+class CallApiService 
+{
 
   private $client;
 
@@ -22,4 +23,5 @@ class CallApiService {
       );
       return $response->toArray();
     }
+  
 }
